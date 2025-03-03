@@ -1,6 +1,6 @@
 ﻿# Define the remote computer name and the new DNS server addresses
 $remoteComputer = "LIST OF COMPUTERS"
-$dnsServers = @("192.168.12.40", "192.168.12.42")  # Example DNS servers (Google DNS)
+$dnsServers = @("DNS1", "DNS2", "DNS3")  # Example DNS servers (Google DNS)
 
 # Get the network adapter on the remote computer
 $networkAdapter = Invoke-Command -ComputerName $remoteComputer -ScriptBlock {
