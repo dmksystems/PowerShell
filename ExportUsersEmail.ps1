@@ -1,0 +1,1 @@
+Get-ADGroupMember -Identity "all employees" -Recursive | Get-ADUser -Properties Mail | Select-Object GivenName,Surname,Mail | Export-CSV -Path C:\file.csv
